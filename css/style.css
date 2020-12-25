@@ -1,0 +1,1326 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Noto Serif", serif;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: 145vh;
+  background: url(../images/back1.png);
+  background-position: center;
+}
+
+header nav {
+  text-align: start;
+  padding: 0.5rem;
+  position: fixed;
+}
+
+header nav a {
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+header nav a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+header nav a:hover {
+  opacity: 1;
+}
+
+header main {
+  height: 118vh;
+  background: url(../images/top.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+header main .heading {
+  height: 60vh;
+  width: 70rem;
+  font-family: "Noto Serif", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 4px 4px 5px gray;
+}
+
+header main .heading h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+header main .heading h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #f9f3cd;
+  margin-top: 0.5rem;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+header main .heading h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+header main .heading h5 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #f9f3cd;
+  margin-top: 0.5rem;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+header main .heading h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #f9f3cd;
+  margin-top: 0.5rem;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+header main .coins {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1200px;
+}
+
+header main .coins .coins-1 {
+  background: url(../images/coin1.jpg);
+  background-position: center;
+  height: 28.5rem;
+  width: 28.5rem;
+  text-align: center;
+  border-radius: 50%;
+  animation: bounce-in-bck 1.1s both;
+}
+
+
+header main .coins .coins-1 p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+  width: 80%;
+  height: 50%;
+}
+
+header main .coins .coins-2 {
+  background: url(../images/coin2.jpg);
+  background-position: center;
+  height: 28.5rem;
+  width: 28.5rem;
+  text-align: center;
+  border-radius: 50%;
+  animation: bounce-in-bck 1.1s both;
+}
+
+header main .coins .coins-2 p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+  width: 80%;
+  height: 50%;
+}
+
+@keyframes bounce-in-bck {
+  0% {
+    transform: scale(7);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1.5);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: scale(1.24);
+    animation-timing-function: ease-in;
+  }
+  89% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(1.04);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+header .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+header .login .login-info {
+  width: 35rem;
+}
+
+header .login .login-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f9f3cd;
+}
+
+header .login .login-info p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ddffff;
+}
+
+header .login a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 3rem 3rem;
+  border-radius: 10px;
+  transition: all .5s ease;
+}
+
+header .login a:hover{
+    color: black;
+    background-color: #f9f3cd;
+}
+
+.birth{
+    padding: 4rem 0;
+    background: url(../images/back2.png);
+    background-position: center;
+}
+
+.birth .birth-head{
+    padding: 2rem 0;
+    text-align: center;
+    text-shadow: 4px 4px 5px gray;
+}
+
+.birth .birth-head h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #544b57;
+}
+
+.birth .birth-head h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+}
+
+.birth .birth-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.birth .birth-info .birth-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60rem;
+}
+
+.birth .birth-info .birth-card img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+    transition: .5s;
+}
+
+.birth .birth-info .birth-card img:hover{
+    transform: rotateY(360deg) scale(1.3);
+}
+
+.birth .birth-info .birth-card p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 35rem;
+    font-family: 'Courgette', cursive;
+}
+
+.birth .birth-info .birth-card p span{
+    color: red;
+}
+
+.vultures{
+  padding: 3rem 0;
+  background: url(../images/back3.png);
+  background-position: center;
+}
+
+.vultures .vultures-heading{
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(75, 74, 74);
+}
+
+.vultures .vultures-heading h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.vultures .vultures-heading h1{
+  font-size: 5rem;
+  font-weight: bold;
+  color: #e68e40;
+}
+
+.vultures .vultures-info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.vultures .vultures-info .vultures-card{
+  width: 15rem;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 5px rgb(41, 40, 40);
+}
+
+.vultures .vultures-info .vultures-card h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e68e40;
+}
+
+.vultures .vultures-info .vultures-card-2{
+  width: 15rem;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(41, 40, 40);
+  color: white;
+}
+
+.vultures .vultures-info .vultures-card-2 img{
+  transform: rotateY(180deg);
+}
+
+.vultures .vultures-info .vultures-card-2 h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e68e40;
+}
+
+.vultures .bird-sec{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.vultures .bird-sec .bird-heading{
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(53, 53, 53);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.vultures .bird-sec .bird-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.vultures .bird-sec .bird-info .bird-card{
+  width: 25rem;
+  height: 24rem;
+  text-align: center;
+}
+
+.vultures .bird-sec .bird-info .bird-card img{
+  transition: .5s;
+}
+
+.vultures .bird-sec .bird-info .bird-card img:hover{
+  transform: rotateY(360deg) scale(1.3);
+}
+
+.vultures .bird-sec .bird-info .bird-card p{
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgb(56, 56, 56);
+  color: white;
+}
+
+.vultures .bird-sec a{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  background-color: rgb(57,45,57);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 0px 0px;
+  transition: .5s ease;
+  margin-top: 2rem;
+}
+
+.vultures .bird-sec a:hover{
+  color: yellow;
+  box-shadow: none;
+}
+
+.map {
+  background: url(../images/back1.png);
+  background-position: center;
+  padding: 3rem 0;
+}
+
+.map .map-head{
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(66, 66, 66);
+}
+
+.map .map-head h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.map .map-head h1{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e68e40;
+}
+
+.map .map-card{
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(68, 67, 67);
+  color: white;
+  width: 60rem;
+  margin-top: 1rem;
+}
+
+.map .map-card h2{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.map .map-card p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.map .arrow{
+  margin-top: 1rem;
+}
+
+.map a{
+  text-decoration: none;
+  color: white;
+  background-color: #6da8f5;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  box-shadow: 7px 7px 5px gray;
+  transition: all .5s ease;
+}
+
+.map a:hover{
+  color: yellow;
+  box-shadow: none;
+}
+
+.map .map-info{
+  color: white;
+  text-shadow: 4px 4px 5px gray;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.map .map-info p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 70%;
+}
+
+.map .map-info h6{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #544b57;
+  margin-top: 1rem;
+}
+
+.face{
+  background: url(../images/back3.png);
+  background-position: center;
+  padding: 2rem 0;
+}
+
+.face .face-head{
+  text-align: center;
+  text-shadow: 4px 4px 5px rgb(56, 56, 56);
+}
+
+.face .face-head h3{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.face .face-head h1{
+  color: #e68e40;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.face .face-head p{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.face .face-info{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  border-image-width: 100%;
+  margin-top: 3rem;
+}
+
+.face .face-info .face-card{
+  width: 15rem;
+  height: auto;
+  text-shadow: 4px 4px 5px rgb(54, 54, 54);
+}
+
+.face .face-info .face-card h1{
+  color: #e68e40;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.face .face-info .face-card h4{
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.face .face-info .face-photo{
+  width: 39rem;
+  text-align: center;
+}
+
+.face .face-info .face-photo  h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e68e40;
+  text-shadow: 4px 4px 5px rgb(46, 45, 45);
+  padding-bottom: 2rem;
+  border-bottom: black solid;
+}
+
+.face .face-source{
+  margin-top: 2rem;
+  text-shadow: 4px 4px 5px rgb(51, 51, 51);
+}
+
+.face .face-source p{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.face .face-source h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e68e40;
+  margin-top: 1rem;
+}
+
+.face .face-source a{
+  text-decoration: none;
+  color: #6da8f5;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.face .face-source a:hover{
+  color: yellow;
+  text-shadow: none;
+}
+
+.contact{
+  background: url(../images/back2.png);
+  background-position: center;
+  padding: 3rem 0;
+}
+
+.contact p{
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 5px rgb(49, 49, 49);
+  width: 70%;
+}
+
+.contact .card-1{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 0px 0px  ;
+  width: 60rem;
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+
+.contact .card-1 h1{
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact .card-1 .card-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.contact .card-1 .card-inner img{
+  transition: .5s ease;
+  opacity: 0.8;
+}
+
+.contact .card-1 .card-inner img:hover{
+  transform: rotateY(360deg) scale(1.5);
+  opacity: 1;
+}
+
+.contact .card-1 .card-inner h6{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.contact .card-3{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 0px 0px  ;
+  width: 60rem;
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.contact .card-3 h4{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #544b57;
+  padding: 0.5rem;
+}
+
+.contact .card-3 .button-sec a img{
+  padding: 1rem;
+  transition: .5s ease;
+}
+
+.contact .card-3 .button-sec a img:hover{
+  transform: scale(1.5);
+}
+
+footer{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: url(../images/back3.png);
+  background-position: center;
+  padding: 2rem 0;
+}
+
+footer .right-foot{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-shadow: 4px 4px 5px rgb(53, 52, 52);
+  width: 50rem;
+}
+
+footer .right-foot h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e68e40;
+}
+
+footer .right-foot p{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+footer .right-foot h2{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: rgba(255,255,255,0.3) solid 1px;
+  border-bottom:rgba(255,255,255,0.3)  solid 1px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e68e40;
+  word-spacing: 2px;
+}
+
+footer .right-foot h4{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* media quarry */
+
+@media(max-width:1300px){
+  header .login{
+    margin-top: 3rem;
+  }
+  header main .coins{
+    padding: 0;
+  }
+}
+
+@media(max-width:1200px){
+  header main .heading{
+    width: 60rem;
+  }
+  header main .coins{
+    max-width: 1000px;
+  }
+  header main .coins .coins-1{
+    width: 22rem;
+    height: 22rem;
+  }
+  header main .coins .coins-2{
+    width: 22rem;
+    height: 22rem;
+  }
+  header main .coins .coins-1 p{
+    font-size: 1rem;
+  }
+  header main .coins .coins-2 p{
+    font-size: 1rem;
+  }
+  header .login .login-info h1{
+    font-size: 1.5rem;
+  }
+  header .login .login-info p{
+    font-size: 1rem;
+  }
+  header .login a{
+    padding: 2rem 2rem;
+  }
+  header .login{
+    margin-top: 3rem;
+  }
+  .vultures .vultures-info .vultures-photo img{
+    width: 30rem;
+  }
+  .face .face-info .face-photo{
+    width: 25rem;
+  }
+  .face .face-info .face-photo img{
+    width: 25rem;
+  }
+  .face .face-info .face-photo h1{
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media(max-width:1100px){
+  .birth .birth-info .birth-card{
+    max-width: 40rem;
+  }
+  .birth .birth-info .birth-card img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .birth .birth-info .birth-card p{
+    font-size: 1.2rem;
+  }
+  .vultures .bird-sec  .bird-info .bird-card img{
+    width: 12rem;
+    height: 12rem;
+  }
+  .vultures .bird-sec  .bird-info .bird-card p{
+    font-size: 0.8rem;
+  }
+  .vultures .bird-sec  .bird-info .bird-card{
+    width: 20rem;
+    height: 20rem;
+  }
+  .map .map-card{
+    width: 700px;
+  }
+}
+
+@media(max-width:1000px){
+  header main .heading{
+    width: 40rem;
+  }
+  header main .heading h4{
+    font-size: 1.6rem;
+  }
+  header main .heading h3{
+    font-size: 2rem;
+  }
+  header main .heading h1{
+    font-size: 3rem;
+  }
+  header main .heading h5{
+    font-size: 1.6rem;
+  }
+  header main .heading h2{
+    font-size: 3.5rem;
+  }
+  header main .coins{
+    max-width: 800px;
+  }
+  header .login a{
+    width: 15rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  header .login .login-info p{
+    width: 70%;
+  }
+  .vultures .vultures-info .vultures-card{
+    width: 10rem;
+  }
+  .vultures .vultures-info .vultures-card-2{
+    width: 10rem;
+  }
+  .map .map-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .map .map-card p{
+    width: 80%;
+  }
+  .face .face-info .face-card{
+    width: 10rem;
+  }
+  .face .face-info .face-card h4{
+    font-size: 1rem;
+  }
+  .contact .card-1{
+    width: 600px;
+  }
+  .contact .card-3{
+    width: 600px;
+  }
+  .contact p{
+    text-align: center;
+  }
+  footer .right-foot h1{
+    font-size: 1.6rem;
+  }
+  footer .right-foot p{
+    font-size: 0.8rem;
+  }
+  footer .right-foot h2{
+    font-size: 1rem;
+  }
+  footer .right-foot h4{
+    font-size: 0.8rem;
+  }
+  footer .right-foot{
+    width: 40rem;
+  }
+  footer {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:800px){
+  header nav  a img{
+    width: 3rem;
+    height: 3rem;
+  }
+  header main .coins{
+    width: 600px;
+  }
+  header main .coins .coins-1{
+    width: 250px;
+    height: 250px;
+  }
+  header main .coins .coins-2{
+    width: 250px;
+    height: 250px;
+  }
+  header main .coins .coins-1 p{
+    font-size: 0.7rem;
+  }
+  header main .coins .coins-2 p{
+    font-size: 0.7rem;
+  }
+  header .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+  }
+  header .login a{
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  header .login .login-info p{
+    width: 100%;
+  }
+  .birth .birth-head h2{
+    font-size: 1.4rem;
+  }
+  .birth .birth-head h1{
+    font-size: 2.5rem;
+  }
+  .birth .birth-head img{
+    width: 80%;
+  }
+  .vultures .vultures-heading h1{
+    font-size: 3rem;
+  }
+  .vultures .vultures-heading h2{
+    font-size: 1.5rem;
+  }
+  .vultures .vultures-info .vultures-card{
+    width: 7rem;
+  }
+  .vultures .vultures-info .vultures-card-2{
+    width: 7rem;
+  }
+  .vultures .vultures-info .vultures-card img{
+    width: 5rem;
+  }
+  .vultures .vultures-info .vultures-card-2 img{
+    width: 5rem;
+  }
+  .vultures .vultures-info .vultures-photo img{
+    width: 18rem;
+  }
+  .vultures .vultures-info .vultures-photo{
+    width: 18rem;
+  }
+  .vultures .vultures-info .vultures-card h2{
+    font-size: 1rem;
+  }
+  .vultures .vultures-info .vultures-card-2 h2{
+    font-size: 1rem;
+  }
+  .vultures .vultures-info .vultures-card h1{
+    font-size: 2rem;
+  }
+  .vultures .vultures-info .vultures-card-2 h1{
+    font-size: 2rem;
+  }
+  .bird-sec{
+    margin-top: 1rem;
+  }
+  .vultures .bird-sec .bird-info .bird-card img{
+    width: 8rem;
+    height: 8rem;
+  }
+  .vultures .bird-sec .bird-info .bird-card p{
+    font-size: 0.7rem;
+  }
+  .vultures .bird-sec .bird-info .bird-card{
+    height: 15rem;
+  }
+  .vultures .bird-sec a{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .map .map-head h2{
+    font-size: 1.4rem;
+  }
+  .map .map-head h1{
+    font-size: 2.5rem;
+  }
+  .map .map-card img{
+    width: 10rem;
+  }
+  .map .map-card h2{
+    font-size: 1.6rem;
+    width: 70%;
+  }
+  .face .face-head h3{
+    font-size: 1.5rem;
+  }
+  .face .face-head h1{
+    font-size: 2.5rem;
+  }
+  .face .face-head p{
+    font-size: 1rem;
+  }
+  .face .face-info .face-card{
+    width: 8rem;
+  }
+  .face .face-info .face-card h1{
+    font-size: 1.6rem;
+  }
+  .face .face-info .face-card h4{
+    font-size: 1rem;
+  }
+  .face .face-info .face-photo{
+    width: 20rem;
+  }
+  .face .face-info .face-photo img{
+    width: 20rem;
+  }
+  .face .face-source{
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .right-foot{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width:700px){
+  .map .map-card p{
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .map .map-card h2{
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  .map .map-card{
+    width: 500px;
+  }
+  .map a{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .map .map-info p{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:650px){
+  .birth .birth-info .birth-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .birth .birth-info .birth-card img{
+    width: 7rem;
+    height: 7rem;
+  }
+  .birth .birth-info .birth-card p{
+    font-size: 0.8rem;
+  }
+  .birth .birth-info #birth-5{
+    flex-direction: column-reverse;
+  }
+  .contact .card-1{
+    width: 24rem;
+    height: 15rem;
+  }
+  .contact .card-1 h1{
+    font-size: 0.6rem;
+  }
+  .contact .card-1 .card-inner .card-2 img{
+    width: 5rem;
+  }
+  .contact .card-1 .card-inner .card-2 h6{
+    font-size: 0.8rem;
+  }
+  .contact .card-3{
+    width: 24rem;
+    height: 15rem;
+  }
+  .contact .card-3 h4{
+    font-size: 0.8rem;
+  }
+  header main .heading{
+    width: 30rem;
+  }
+}
+
+@media(max-width:600px){
+  header main .coins{
+    width: 500px;
+  }
+  header .login .login-info {
+    width: 50%;
+  }
+  header main{
+    background-position: center;
+    height: 100vh;
+  }
+  header{
+    height: 140vh;
+  }
+  .birth .birth-info .birth-card p{
+    width: 70%;
+  }
+  .face .face-head h3{
+    font-size: 1rem;
+  }
+  .face .face-head h1{
+    font-size: 2rem;
+  }
+  .face .face-head p{
+    font-size: 0.8rem;
+  }
+  .face .face-info .face-photo{
+    width: 15rem;
+  }
+  .face .face-info .face-photo img{
+    width: 15rem;
+  }
+  .face .face-info .face-card{
+    width: 6rem;
+  }
+  .face .face-info .face-card h1{
+    font-size: 1rem;
+  }
+  .face .face-info .face-card h4{
+    font-size: 0.6rem;
+  }
+  .face .face-source p{
+    font-size: 0.8rem;
+    width: 60%;
+  }
+  .face .face-source h4{
+    font-size: 1.2rem;
+  }
+  .face .face-source a{
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+  }
+  footer .right-foot h1{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  footer .right-foot p{
+    margin-bottom: 0.5rem;
+  }
+  .contact p{
+    font-size: 0.8rem;
+  }
+}
+@media(max-width:500px){
+  header main .coins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  header main .heading h4{
+    font-size: 1rem;
+  }
+  header main .heading h3{
+    font-size: 1.4rem;
+  }
+  header main .heading h1{
+    font-size: 2rem;
+  }
+  header main .heading h5{
+    font-size: 1rem;
+  }
+  header main .heading h2{
+    font-size: 3rem;
+  }
+  header main .heading{
+    justify-content: stretch;
+    width: 100%;
+    padding-top: 1rem;
+    height: 16rem;
+  }
+  header main{
+    height: 110vh;
+  }
+  header{
+    height: 150vh;
+  }
+  .vultures .bird-sec .bird-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 300px;
+  }
+  .vultures .bird-sec a{
+    font-size: 1rem;
+    padding:1rem;
+  }
+  .vultures .vultures-info .vultures-photo img{
+    width: 12rem;
+  }
+  .vultures .vultures-info .vultures-photo {
+    width: 12rem;
+  }
+  .vultures .vultures-info .vultures-card h1{
+    font-size: 1rem;
+  }
+  .vultures .vultures-info .vultures-card-2 h1{
+    font-size: 1rem;
+  }
+  .vultures .vultures-info .vultures-card img{
+    width: 4rem;
+  }
+  .vultures .vultures-info .vultures-card-2 img{
+    width: 4rem;
+  }
+  .vultures .vultures-info {
+    width: 100%;
+  }
+  .map .map-card{
+    width: auto;
+  }
+  .map .map-card p{
+    width: 80%;
+  }
+  .face .face-head{
+    width: auto;
+  }
+  .face .face-info{
+    width: auto;
+  }
+  .face .face-source h4{
+    font-size: 1rem;
+  }
+  .contact p{
+    font-size:0.7rem;
+  }
+  footer .right-foot h1{
+    font-size: 1rem;
+  }
+  footer .right-foot p{
+    font-size: 0.6rem;
+  }
+  footer .right-foot h2{
+    font-size: 0.8rem;
+  }
+  footer .right-foot h2 img{
+    width: 3rem;
+  }
+}
+@media(max-width:400px){
+  .map .map-head h1{
+    font-size: 1.4rem;
+  }
+  .face .face-info .face-card{
+    width: 4rem;
+  }
+  .face .face-source h4{
+    width: 70%;
+  }
+  .contact .card-1{
+    width: 300px;
+  }
+  .contact .card-1 .card-inner .card-2 h6{
+    font-size: 0.6rem;
+  }
+  .contact .card-3 {
+    width: 300px;
+    height: 200px;
+  }
+  .contact .card-3 h4{
+    font-size: 0.6rem;
+  }
+  .contact .card-3 .button-sec  a img{
+    width: 4rem;
+  }
+}
